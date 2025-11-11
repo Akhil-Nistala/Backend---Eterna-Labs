@@ -25,7 +25,8 @@ It aggregates token data from public APIs like DexScreener and Jupiter, and expo
 - Jest for testing
 
 ---
-
+```
+## Structure
 real-time-aggregator/
 │
 ├── src/
@@ -41,6 +42,8 @@ real-time-aggregator/
 ├── package.json              -> Project dependencies and scripts
 ├── tsconfig.json             -> TypeScript configuration
 └── README.md                 -> Project documentation
+```
+
 
 ---
 
