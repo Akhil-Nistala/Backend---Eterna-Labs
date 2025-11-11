@@ -26,22 +26,21 @@ It aggregates token data from public APIs like DexScreener and Jupiter, and expo
 
 ---
 
-## Folder Structure
-
 real-time-aggregator/
 │
 ├── src/
-│   ├── aggregator.ts       -> Core logic to fetch and merge token data
-│   ├── cache.ts            -> Cache layer using Redis or memory
-│   ├── routes/tokens.ts    -> REST API routes
-│   ├── websocket.ts        -> WebSocket for real-time updates
-│   ├── index.ts            -> Entry point
-│   └── server.ts           -> Server setup
+│   ├── aggregator.ts         -> Core logic to fetch and merge token data
+│   ├── cache.ts              -> Cache layer using Redis or in-memory storage
+│   ├── routes/
+│   │   └── tokens.ts         -> REST API route for /tokens endpoint
+│   ├── websocket.ts          -> WebSocket setup for live token updates
+│   ├── index.ts              -> Application entry point
+│   └── server.ts             -> Express server setup
 │
-├── tests/                  -> Jest unit tests
-├── package.json
-├── tsconfig.json
-└── README.md
+├── tests/                    -> Jest unit and integration tests
+├── package.json              -> Project dependencies and scripts
+├── tsconfig.json             -> TypeScript configuration
+└── README.md                 -> Project documentation
 
 ---
 
@@ -131,3 +130,4 @@ GitHub: https://github.com/Akhil-Nistala
   - DexScreener: https://api.dexscreener.com/latest/dex/search?q=SOL
   - Jupiter: https://price.jup.ag/v4/price?ids=SOL
 - Rate limits may apply depending on the API.
+
