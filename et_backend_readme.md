@@ -25,8 +25,8 @@ It aggregates token data from public APIs like DexScreener and Jupiter, and expo
 - Jest for testing
 
 ---
-```
 ## Structure
+```
 real-time-aggregator/
 │
 ├── src/
@@ -133,4 +133,5 @@ GitHub: https://github.com/Akhil-Nistala
   - DexScreener: https://api.dexscreener.com/latest/dex/search?q=SOL
   - Jupiter: https://price.jup.ag/v4/price?ids=SOL
 - Rate limits may apply depending on the API.
+
 
